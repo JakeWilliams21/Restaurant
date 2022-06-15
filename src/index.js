@@ -1,3 +1,10 @@
 import pageSetup from "./setup";
+import createNavbar from './navbar.js'
+import './style.css';
 
-pageSetup();
+const contentDiv = document.querySelector('#content')
+
+contentDiv.appendChild(createNavbar())
+contentDiv.appendChild(pageSetup())
+
+
