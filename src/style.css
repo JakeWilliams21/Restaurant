@@ -1,3 +1,10 @@
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 #content {
     display: flex;
     flex-direction: column;
@@ -13,8 +20,29 @@ img {
 
 .navbar {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     gap: 16px;
+    background-color: rgb(234, 234, 234);
+    padding: 16px;
+    width: 100vw;
+
+}
+
+.navbar > * {
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.nav-right {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 8px;
+}
+
+.nav-left {
+    font-size: larger;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .tab {
@@ -24,7 +52,7 @@ img {
     border: solid;
     border-radius: 8px;
     width: 75px;
-    height: 50px;
+    height: 35px;
 }
 
 /* Content */
@@ -33,4 +61,12 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80vw;
+    text-align: center;
+}
+
+.tab-div {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
 }
