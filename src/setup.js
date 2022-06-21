@@ -18,22 +18,16 @@ div.appendChild(paragraph);
 const tabDiv = document.createElement('div')
 tabDiv.classList.add('tab-div');
 
-const homeNavTab = document.createElement('div')
-homeNavTab.classList.add('tab');
-homeNavTab.textContent = 'Home'
-homeNavTab.addEventListener('click', () => console.log('clicked'))
-tabDiv.appendChild(homeNavTab)
-
 const menuNavTab = document.createElement('div')
 menuNavTab.classList.add('tab');
+menuNavTab.classList.add('menu-tab');
 menuNavTab.textContent = 'Menu'
-menuNavTab.addEventListener('click', () => console.log('clicked'))
 tabDiv.appendChild(menuNavTab)
 
 const contactNavTab = document.createElement('div')
 contactNavTab.classList.add('tab');
+contactNavTab.classList.add('contact-tab');
 contactNavTab.textContent = 'Contact'
-contactNavTab.addEventListener('click', () => console.log('clicked'))
 tabDiv.appendChild(contactNavTab)
 
 div.appendChild(tabDiv)
